@@ -1,0 +1,17 @@
+#scroll-progress{
+	position: fixed;
+	z-index: 2147483647;
+	top: 0;
+	left: -6px;
+	width: 0%;
+	height: 2px;
+	border-radius: 1px;
+	-moz-transition: width 300ms ease-out, opacity 300ms linear;
+	-webkit-transition: width 300ms ease-out, opacity 300ms linear;
+	transition: width 300ms ease-out, opacity 300ms linear;
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	will-change: width, opacity;
+}

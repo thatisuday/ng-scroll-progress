@@ -1,0 +1,21 @@
+{
+  "name": "ng-scroll-progress",
+  "description": "Angular progress bar for amount of page scrolled",
+  "main": "dist/ng-scroll-progress.js",
+  "authors": [
+    "Uday Hiwarale <uhiwarale@gmail.com> (https://github.com/thatisuday)"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/thatisuday/ng-scroll-progress",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "jquery": "1.10.2"
+  }
+}

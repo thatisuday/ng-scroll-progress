@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="demo">
+	<head>
+		<title>Angular Scroll Progress</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<!-- Local Dependencies -->
+		<!-- <script src="../bower_components/angular/angular.js"></script> -->
+
+		<!-- Dependencies -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<!-- Module files-->
+		<script src="../dist/ng-scroll-progress.min.js"></script>
+		<link href="../dist/ng-scroll-progress.min.css" rel="stylesheet"/>
+
+		<style>
+			body{
+				background-color: #fff;
+				font-family: sans-serif;
+			}
+			[ng-scroll-element]{
+				width: 80%;
+				margin:300px auto 700px;
+				height: 1500px;
+				background-color: #eee;
+			}
+		</style>
+	</head>
+	<body ng-controller="main" >
+		<div ng-scroll-element></div>
+
+		<script>
+			angular
+			.module('demo', ['thatisuday.ng-scroll-progress'])
+			.config(function($scrollProgressOpsProvider){
+				$scrollProgressOpsProvider.setOps({
+					//background: '#e91e63',
+				});
+			})
+			.controller('main', function($rootScope, $scope, $timeout, $http){
+				
+			});
+		</script>
+	</body>
+</html>
